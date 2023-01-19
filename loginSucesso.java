@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-@DisplayName("Testes Web")
-public class loginU {
+@DisplayName("Teste Web Sucesso")
+public class LoginSucesso {
     @Test
     @DisplayName("FazerLogin")
     public void testValidarLoginDeSucesso() {
@@ -21,15 +21,19 @@ public class loginU {
         //Navegar para a pagina da Product Store
         navegador.get("https://www.demoblaze.com/index.html");
 
-        // Fazer login
+        // Clicar no botão Log in
         navegador.findElement(By.cssSelector("a[id='login2']")).click();
+
+        // Inserir Username
         navegador.findElement(By.id("loginusername")).sendKeys("uxgroup");
 
-        navegador.findElement(By.cssSelector("input[id='loginpassword']")).click();
+        // Inserir Password
         navegador.findElement(By.id("loginpassword")).sendKeys("1234");
 
-        navegador.findElement(By.cssSelector(" button[onclick='logIn()']")).click();
+        // Clicar no botão Log in
+        navegador.findElement(By.cssSelector("button[onclick='logIn()']")).click();
 
 
     }
 }
+
