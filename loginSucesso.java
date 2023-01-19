@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @DisplayName("Teste Web Sucesso")
 public class LoginSucesso {
     @Test
-    @DisplayName("FazerLogin")
+    @DisplayName("FazerLoginSucesso")
     public void testValidarLoginDeSucesso() {
         // Abrir o navegador
         System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32\\chromedriver.exe");
