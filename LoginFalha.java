@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @DisplayName("Teste Web Falha")
 public class LoginFalha {
     @Test
-    @DisplayName("FazerLogin")
+    @DisplayName("FazerLoginFalha")
     public void testValidarLoginDeFalha() {
         // Abrir o navegador
         System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32\\chromedriver.exe");
